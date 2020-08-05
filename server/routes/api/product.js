@@ -82,6 +82,19 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
   });
 });
 
+// router.post('/:id', upload.array('photos', 200), function(req, res, next){
+//   gfs = Grid(db);
+//   var ss = req.files;
+//      for(var j=0; j<ss.length; j++){
+//        var originalName = ss[j].originalname;
+//        var filename = ss[j].filename;
+//        var writestream = gfs.createWriteStream({
+//            filename: originalName
+//        });
+//       fs.createReadStream("./uploads/" + filename).pipe(writestream);
+//      }
+//   });
+
 // fetch product api
 router.get('/item/:slug', (req, res) => {
   const slug = req.params.slug;

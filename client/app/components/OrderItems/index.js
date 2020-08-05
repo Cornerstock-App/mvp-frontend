@@ -21,7 +21,7 @@ const OrderItems = props => {
             <Row>
               <Col xs='4' md='2'>
                 <div className='item-image'>
-                  <img src={item.product.image} />
+                  <img src={product.image} />
                 </div>
               </Col>
               <Col xs='8' md='4'>

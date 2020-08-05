@@ -61,18 +61,11 @@ const AddProduct = props => {
             />
           </Col>
           <Col xs='12' lg='6'>
-            <Input
-              type={'file'}
-              error={formErrors['image']}
-              label={'Image'}
-              name={'image'}
-              placeholder={'Product Image'}
-              value={productFormData.file}
-              onInputChange={(file, value) => {
-                productChange(file, value);
-              }}
-            />
-
+          <input 
+          type="file" 
+          name="photos" 
+            
+          />
           </Col>
 
           <Col xs='12' md='12'>

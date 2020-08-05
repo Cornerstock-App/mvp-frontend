@@ -79,7 +79,7 @@ export const fetchImageProducts = slug => {
     dispatch({ type: SET_PRODUCTS_LOADING, payload: true });
 
     try {
-      const response = await axios.get(`/api/product/list/image/${slug}`);
+      const response = await axios.get(`/api/product/image/${slug}`);
 
       dispatch({
         type: FETCH_PRODUCTS,

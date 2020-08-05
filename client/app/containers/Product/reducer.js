@@ -64,7 +64,7 @@ const initialState = {
     },
     {
       dataField: 'image',
-      text: 'Product Image',
+      //text: 'Product Image',
       //sort: true
     },
     {
