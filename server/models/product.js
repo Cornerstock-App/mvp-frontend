@@ -12,7 +12,7 @@ Mongoose.plugin(slug, options);
 
 // Product Schema
 const ProductSchema = new Schema({
-  sku: {
+  whatsapp: {
     type: String
   },
   name: {

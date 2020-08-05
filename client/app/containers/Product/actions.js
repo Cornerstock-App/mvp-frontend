@@ -210,7 +210,7 @@ export const addProduct = () => {
   return async (dispatch, getState) => {
     try {
       const rules = {
-        sku: 'required|min:3',
+        whatsapp: 'required|min:8',
         name: 'required|min:6',
         image: 'required',
         description: 'required|min:10|max:100',

@@ -33,7 +33,7 @@ const OrderItems = props => {
                     >
                       <h1 className='item-name'>{item.product.name}</h1>
                     </Link>
-                    <p className='sku'>{item.product.sku}</p>
+                    <p className='whatsapp'>{item.product.whatsapp}</p>
                     <p className='price'>GH₵{item.product.price}</p>
                   </div>
                 </div>

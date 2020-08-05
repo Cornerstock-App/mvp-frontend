@@ -37,19 +37,6 @@ const AddProduct = props => {
           <Col xs='12' lg='6'>
             <Input
               type={'text'}
-              error={formErrors['sku']}
-              label={'Sku'}
-              name={'sku'}
-              placeholder={'Product Sku'}
-              value={productFormData.sku}
-              onInputChange={(name, value) => {
-                productChange(name, value);
-              }}
-            />
-          </Col>
-          <Col xs='12' lg='6'>
-            <Input
-              type={'text'}
               error={formErrors['name']}
               label={'Name'}
               name={'name'}
@@ -66,6 +53,21 @@ const AddProduct = props => {
           name="photos" 
             
           />
+          </Col>
+
+
+          <Col xs='12' lg='6'>
+            <Input
+              type={'text'}
+              error={formErrors['whatsapp']}
+              label={'shop/vendor whatsapp number'}
+              name={'whatsapp'}
+              placeholder={'Shop whatsapp number'}
+              value={productFormData.whatsapp}
+              onInputChange={(name, value) => {
+                productChange(name, value);
+              }}
+            />
           </Col>
 
           <Col xs='12' md='12'>

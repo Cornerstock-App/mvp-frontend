@@ -70,7 +70,7 @@ class ProductPage extends React.PureComponent {
                 <div className='item-box'>
                   <div className='item-details'>
                     <h1 className='item-name'>{product.name}</h1>
-                    <p className='sku'>{product.sku}</p>
+                    <p className='whatsapp'>{product.whatsapp}</p>
                     <hr />
                     {product.brand && (
                       <p className='by'>
