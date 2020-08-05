@@ -13,6 +13,7 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
   const name = req.body.name;
   const image = req.body.image;
   const description = req.body.description;
+  const whatsapp = req.body.whatsapp;
   const quantity = req.body.quantity;
   const price = req.body.price;
   const taxable = req.body.taxable;
@@ -29,8 +30,15 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
       .json({ error: 'You must enter description & name.' });
   }
 
+  if (!whatsapp) {
+    return res
+    .status(400)
+    .json({ error: 'Please enter shop whatsapp number!' });
+  }
+
   if (!image) {
-    return res.status(400)
+    return res
+    .status(400)
     .json({ error: 'Please upload product image!' });
   }
 
@@ -60,6 +68,7 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
       name,
       image,
       description,
+      whatsapp,
       quantity,
       price,
       taxable,

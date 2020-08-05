@@ -81,6 +81,23 @@ const AddProduct = props => {
               }}
             />
           </Col>
+
+              {/* contact details */}
+
+            <Col xs='12' md='12'>
+            <Input
+              type={'text'}
+              error={formErrors['whatsapp']}
+              label={'WhatsApp'}
+              name={'whatsapp'}
+              placeholder={'retailer WhatsApp number'}
+              value={productFormData.whatsapp}
+              onInputChange={(name, value) => {
+                productChange(name, value);
+              }}
+            />
+          </Col>
+
           <Col xs='12' lg='6'>
             <Input
               type={'number'}

@@ -33,6 +33,7 @@ const initialState = {
     name: '',
     image: '',
     description: '',
+    whatsapp: '',
     quantity: 1,
     price: 1,
     taxable: 0
@@ -71,6 +72,11 @@ const initialState = {
       dataField: 'description',
       text: 'Product Description',
       classes: 'desc-column'
+    },
+    {
+      dataField: 'whatsapp',
+      text: 'WhatsApp',
+      sort: true
     },
     {
       dataField: 'quantity',
@@ -164,6 +170,7 @@ const productReducer = (state = initialState, action) => {
           name: '',
           image: '',
           description: '',
+          whatsapp: '',
           quantity: 1,
           price: 0
         },

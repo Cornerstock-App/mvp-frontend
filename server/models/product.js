@@ -32,6 +32,9 @@ const ProductSchema = new Schema({
     type: String,
     trim: true
   },
+  whatsapp: {
+    type: Number
+  },
   quantity: {
     type: Number
   },
