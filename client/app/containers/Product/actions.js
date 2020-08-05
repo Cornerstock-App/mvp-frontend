@@ -214,7 +214,6 @@ export const addProduct = () => {
         name: 'required|min:6',
         image: 'required',
         description: 'required|min:10|max:100',
-        whatsapp: 'required|min:7',
         quantity: 'required|numeric',
         price: 'required|numeric',
         taxable: 'required',

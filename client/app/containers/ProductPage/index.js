@@ -52,7 +52,6 @@ class ProductPage extends React.PureComponent {
       <div className='product-shop'>
         {isLoading ? (
           <LoadingIndicator />
-
         ) : Object.keys(product).length > 0 ? (
           <Row>
             <Col xs='12' md='5' lg='5' className='mb-3'>
@@ -84,18 +83,6 @@ class ProductPage extends React.PureComponent {
                         </Link>
                       </p>
                     )}
-                    {product.whatsapp && (
-                      <p className='by'>
-                        Contact shop on{' '}
-                        <Link
-                          to={`/shop/whatsapp/${product.whatsapp}`}
-                          className='whatsapp-link'
-                        >
-                          {product.whatsapp}
-                        </Link>
-                      </p>
-                    )}
-                    
                     <p className='item-desc'>{product.description}</p>
                     <p className='price'>GH₵{product.price}</p>
                   </div>

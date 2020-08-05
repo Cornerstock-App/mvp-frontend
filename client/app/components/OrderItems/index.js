@@ -8,7 +8,6 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
-import product from '../../../../server/models/product';
 
 const OrderItems = props => {
   const { order } = props;
@@ -36,7 +35,6 @@ const OrderItems = props => {
                     </Link>
                     <p className='sku'>{item.product.sku}</p>
                     <p className='price'>GH₵{item.product.price}</p>
-                    <p className='whatsapp'>Shop whatsapp number {item.product.whatsapp}</p>
                   </div>
                 </div>
               </Col>

@@ -41,22 +41,12 @@
           @include text-ellipsis(2);
         }
 
-        .whatsapp {
-          margin-bottom: 5px;
-          color: $font-custom-color !important;
-
-          span {
-            color: $theme-blue;
-            font-weight: $font-weight-bold-one;
-          }
-        }
-
         .by {
           margin-bottom: 5px;
           color: $font-custom-color !important;
 
           span {
-            color: $font-custom-color;
+            color: $theme-blue;
             font-weight: $font-weight-bold-one;
           }
         }
@@ -161,12 +151,6 @@
   }
 
   .price {
-    color: $font-custom-color;
-    font-weight: $font-weight-bold-two;
-    font-size: $font-size-huge;
-  }
-
-  .whatsapp {
     color: $font-custom-color;
     font-weight: $font-weight-bold-two;
     font-size: $font-size-huge;
